@@ -39,7 +39,7 @@ a.more {
 }
 
 .custom-navbar {
-  background: #212121 !important;
+  background: #3b5d50 !important;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -54,22 +54,16 @@ a.more {
     content: "";
     position: relative;
     display: block;
-    top: 2.5rem;
+    top: 2rem;
     left: 0.1rem;
-    right: 0.5px;
-    background: #f9bf29;
+    right: 0.1rem;
+    background-color: #f9bf29;
     height: 0.2rem;
-    opacity: 1;
-    visibility: visible;
     width: 0;
     -webkit-transition: .15s all ease-out;
     -o-transition: .15s all ease-out;
     transition: .15s all ease-out;
   }
-}
-
-.custom-navbar .navbar-brand:hover {
-  opacity: 1;
 }
 
 .custom-navbar .navbar-brand:hover:before {
@@ -159,11 +153,14 @@ a.more {
 .custom-navbar .custom-navbar-cta li {
   margin-left: 0px;
   margin-right: 0px;
+  -webkit-transition: .15s all ease-out;
+  -o-transition: .15s all ease-out;
+  transition: .15s all ease-out;
 }
 
-/* .custom-navbar .custom-navbar-cta li a:hover {
-  transform: rotate(360deg);
-} */
+.custom-navbar .custom-navbar-cta li:hover {
+  filter: contrast(50%);
+}
 
 .custom-navbar .custom-navbar-cta li:first-child {
   margin-right: 20px;

@@ -1,7 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-regular-svg-icons'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react'
+import userSVG from '../assets/images/user.svg'
+import cartSVG from '../assets/images/cart.svg'
 
 const Header = () => {
    return (
@@ -25,12 +23,8 @@ const Header = () => {
                      <li><a className="nav-link" href="contact.html">Contact us</a></li>
                   </ul>
                   <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-                     <li><a className="nav-link" href="#">
-                        <FontAwesomeIcon icon={faUser} size='lg' style={{ color: "#f9bf29", }} className='icon-hover' />
-                     </a></li>
-                     <li><a className="nav-link" href="cart.html">
-                        <FontAwesomeIcon icon={faCartShopping} size='lg' style={{ color: "#f9bf29", }} className='icon-hover' />
-                     </a></li>
+                     <li><a className="nav-link" href="#"><img src={userSVG} /></a></li>
+                     <li><a className="nav-link" href="cart.html"><img src={cartSVG} /></a></li>
                   </ul>
                </div>
             </div>
