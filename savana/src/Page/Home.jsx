@@ -1,6 +1,25 @@
 import coverPNG from '../assets/images/couch.png'
+import crossSVG from '../assets/images/cross.svg'
+import product1PNG from '../assets/images/product-1.png'
+import product2PNG from '../assets/images/product-2.png'
+import product3PNG from '../assets/images/product-3.png'
+import truckSVG from '../assets/images/truck.svg'
+import bagSVG from '../assets/images/bag.svg'
+import supportSVG from '../assets/images/support.svg'
+import returnSVG from '../assets/images/return.svg'
+import whyChooseUsImgJPG from '../assets/images/why-choose-us-img.jpg'
+import imgGrid1JPG from '../assets/images/img-grid-1.jpg'
+import imgGrid2JPG from '../assets/images/img-grid-2.jpg'
+import imgGrid3JPG from '../assets/images/img-grid-3.jpg'
+import person1PNG from '../assets/images/person-1.png'
+import post1JPG from '../assets/images/post-1.jpg'
+import post2JPG from '../assets/images/post-2.jpg'
+import post3JPG from '../assets/images/post-3.jpg'
+import { useEffect } from 'react'
+import customSlider from '../assets/js/custom-slider'
 
 function Home() {
+   useEffect(() => { customSlider() }, [])
    return (
       <>
          {/* Start Hero Section */}
@@ -12,7 +31,7 @@ function Home() {
                         <h1>Modern Interior <span clsas="d-block">Design Studio</span></h1>
                         <p className="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
                            vulputate velit imperdiet dolor tempor tristique.</p>
-                        <p><a href className="btn btn-secondary me-2">Shop Now</a><a href="#" className="btn btn-white-outline">Explore</a></p>
+                        <p><a href="#" className="btn btn-secondary me-2">Shop Now</a><a href="#" className="btn btn-white-outline">Explore</a></p>
                      </div>
                   </div>
                   <div className="col-lg-7">
@@ -39,11 +58,11 @@ function Home() {
                   {/* Start Column 2 */}
                   <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                      <a className="product-item" href="cart.html">
-                        <img src="images/product-1.png" className="img-fluid product-thumbnail" />
+                        <img src={product1PNG} className="img-fluid product-thumbnail" />
                         <h3 className="product-title">Nordic Chair</h3>
                         <strong className="product-price">$50.00</strong>
                         <span className="icon-cross">
-                           <img src="images/cross.svg" className="img-fluid" />
+                           <img src={crossSVG} className="img-fluid" />
                         </span>
                      </a>
                   </div>
@@ -51,11 +70,11 @@ function Home() {
                   {/* Start Column 3 */}
                   <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                      <a className="product-item" href="cart.html">
-                        <img src="images/product-2.png" className="img-fluid product-thumbnail" />
+                        <img src={product2PNG} className="img-fluid product-thumbnail" />
                         <h3 className="product-title">Kruzo Aero Chair</h3>
                         <strong className="product-price">$78.00</strong>
                         <span className="icon-cross">
-                           <img src="images/cross.svg" className="img-fluid" />
+                           <img src={crossSVG} className="img-fluid" />
                         </span>
                      </a>
                   </div>
@@ -63,11 +82,11 @@ function Home() {
                   {/* Start Column 4 */}
                   <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                      <a className="product-item" href="cart.html">
-                        <img src="images/product-3.png" className="img-fluid product-thumbnail" />
+                        <img src={product3PNG} className="img-fluid product-thumbnail" />
                         <h3 className="product-title">Ergonomic Chair</h3>
                         <strong className="product-price">$43.00</strong>
                         <span className="icon-cross">
-                           <img src="images/cross.svg" className="img-fluid" />
+                           <img src={crossSVG} className="img-fluid" />
                         </span>
                      </a>
                   </div>
@@ -88,7 +107,7 @@ function Home() {
                         <div className="col-6 col-md-6">
                            <div className="feature">
                               <div className="icon">
-                                 <img src="images/truck.svg" alt="Image" className="imf-fluid" />
+                                 <img src={truckSVG} alt="Image" className="imf-fluid" />
                               </div>
                               <h3>Fast &amp; Free Shipping</h3>
                               <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
@@ -97,7 +116,7 @@ function Home() {
                         <div className="col-6 col-md-6">
                            <div className="feature">
                               <div className="icon">
-                                 <img src="images/bag.svg" alt="Image" className="imf-fluid" />
+                                 <img src={bagSVG} alt="Image" className="imf-fluid" />
                               </div>
                               <h3>Easy to Shop</h3>
                               <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
@@ -106,7 +125,7 @@ function Home() {
                         <div className="col-6 col-md-6">
                            <div className="feature">
                               <div className="icon">
-                                 <img src="images/support.svg" alt="Image" className="imf-fluid" />
+                                 <img src={supportSVG} alt="Image" className="imf-fluid" />
                               </div>
                               <h3>24/7 Support</h3>
                               <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
@@ -115,7 +134,7 @@ function Home() {
                         <div className="col-6 col-md-6">
                            <div className="feature">
                               <div className="icon">
-                                 <img src="images/return.svg" alt="Image" className="imf-fluid" />
+                                 <img src={returnSVG} alt="Image" className="imf-fluid" />
                               </div>
                               <h3>Hassle Free Returns</h3>
                               <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
@@ -125,7 +144,7 @@ function Home() {
                   </div>
                   <div className="col-lg-5">
                      <div className="img-wrap">
-                        <img src="images/why-choose-us-img.jpg" alt="Image" className="img-fluid" />
+                        <img src={whyChooseUsImgJPG} alt="Image" className="img-fluid" />
                      </div>
                   </div>
                </div>
@@ -138,9 +157,9 @@ function Home() {
                <div className="row justify-content-between">
                   <div className="col-lg-7 mb-5 mb-lg-0">
                      <div className="imgs-grid">
-                        <div className="grid grid-1"><img src="images/img-grid-1.jpg" alt="Untree.co" /></div>
-                        <div className="grid grid-2"><img src="images/img-grid-2.jpg" alt="Untree.co" /></div>
-                        <div className="grid grid-3"><img src="images/img-grid-3.jpg" alt="Untree.co" /></div>
+                        <div className="grid grid-1"><img src={imgGrid1JPG} alt="Untree.co" /></div>
+                        <div className="grid grid-2"><img src={imgGrid2JPG} alt="Untree.co" /></div>
+                        <div className="grid grid-3"><img src={imgGrid3JPG} alt="Untree.co" /></div>
                      </div>
                   </div>
                   <div className="col-lg-5 ps-lg-5">
@@ -167,7 +186,7 @@ function Home() {
                   <div className="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                      <div className="product-item-sm d-flex">
                         <div className="thumbnail">
-                           <img src="images/product-1.png" alt="Image" className="img-fluid" />
+                           <img src={product1PNG} alt="Image" className="img-fluid" />
                         </div>
                         <div className="pt-3">
                            <h3>Nordic Chair</h3>
@@ -179,7 +198,7 @@ function Home() {
                   <div className="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                      <div className="product-item-sm d-flex">
                         <div className="thumbnail">
-                           <img src="images/product-2.png" alt="Image" className="img-fluid" />
+                           <img src={product2PNG} alt="Image" className="img-fluid" />
                         </div>
                         <div className="pt-3">
                            <h3>Kruzo Aero Chair</h3>
@@ -191,7 +210,7 @@ function Home() {
                   <div className="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                      <div className="product-item-sm d-flex">
                         <div className="thumbnail">
-                           <img src="images/product-3.png" alt="Image" className="img-fluid" />
+                           <img src={product3PNG} alt="Image" className="img-fluid" />
                         </div>
                         <div className="pt-3">
                            <h3>Ergonomic Chair</h3>
@@ -233,7 +252,7 @@ function Home() {
                                        </blockquote>
                                        <div className="author-info">
                                           <div className="author-pic">
-                                             <img src="images/person-1.png" alt="Maria Jones" className="img-fluid" />
+                                             <img src={person1PNG} alt="Maria Jones" className="img-fluid" />
                                           </div>
                                           <h3 className="font-weight-bold">Maria Jones</h3>
                                           <span className="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -256,7 +275,7 @@ function Home() {
                                        </blockquote>
                                        <div className="author-info">
                                           <div className="author-pic">
-                                             <img src="images/person-1.png" alt="Maria Jones" className="img-fluid" />
+                                             <img src={person1PNG} alt="Maria Jones" className="img-fluid" />
                                           </div>
                                           <h3 className="font-weight-bold">Maria Jones</h3>
                                           <span className="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -279,7 +298,7 @@ function Home() {
                                        </blockquote>
                                        <div className="author-info">
                                           <div className="author-pic">
-                                             <img src="images/person-1.png" alt="Maria Jones" className="img-fluid" />
+                                             <img src={person1PNG} alt="Maria Jones" className="img-fluid" />
                                           </div>
                                           <h3 className="font-weight-bold">Maria Jones</h3>
                                           <span className="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -310,7 +329,7 @@ function Home() {
                <div className="row">
                   <div className="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                      <div className="post-entry">
-                        <a href="#" className="post-thumbnail"><img src="images/post-1.jpg" alt="Image" className="img-fluid" /></a>
+                        <a href="#" className="post-thumbnail"><img src={post1JPG} alt="Image" className="img-fluid" /></a>
                         <div className="post-content-entry">
                            <h3><a href="#">First Time Home Owner Ideas</a></h3>
                            <div className="meta">
@@ -321,7 +340,7 @@ function Home() {
                   </div>
                   <div className="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                      <div className="post-entry">
-                        <a href="#" className="post-thumbnail"><img src="images/post-2.jpg" alt="Image" className="img-fluid" /></a>
+                        <a href="#" className="post-thumbnail"><img src={post2JPG} alt="Image" className="img-fluid" /></a>
                         <div className="post-content-entry">
                            <h3><a href="#">How To Keep Your Furniture Clean</a></h3>
                            <div className="meta">
@@ -332,7 +351,7 @@ function Home() {
                   </div>
                   <div className="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                      <div className="post-entry">
-                        <a href="#" className="post-thumbnail"><img src="images/post-3.jpg" alt="Image" className="img-fluid" /></a>
+                        <a href="#" className="post-thumbnail"><img src={post3JPG} alt="Image" className="img-fluid" /></a>
                         <div className="post-content-entry">
                            <h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
                            <div className="meta">
