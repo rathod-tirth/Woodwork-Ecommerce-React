@@ -427,6 +427,16 @@ a.more {
   height: 70%;
 }
 
+.sale-section {
+  padding: 7rem 0 2rem;
+}
+
+.sale-section .section-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .why-choose-section {
   padding: 7rem 0;
 }
