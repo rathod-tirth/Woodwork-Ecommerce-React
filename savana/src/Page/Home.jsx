@@ -15,11 +15,9 @@ import person1PNG from '../assets/images/person-1.png'
 import post1JPG from '../assets/images/post-1.jpg'
 import post2JPG from '../assets/images/post-2.jpg'
 import post3JPG from '../assets/images/post-3.jpg'
-import { useEffect } from 'react'
-import customSlider from '../assets/js/custom-slider'
 
 function Home() {
-   useEffect(() => { customSlider() }, [])
+
    return (
       <>
          <section className='main-section'>
@@ -44,6 +42,79 @@ function Home() {
                </div>
             </div>
             {/* End Hero Section */}
+            {/* Start Sale Section */}
+            <div className="sale-section">
+               <div className="container">
+                  <div className="row justify-content-between">
+                     <div className="col-lg-5">
+                        <h2 className="section-title">Mega Sale</h2>
+                        <h3 className='text-warning fw-bolder fs-2'>24h : 15m : 08s</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                           Rerum ratione numquam doloremque quae suscipit dolorem. Nihil praesentium
+                           ipsam vel quidem cumque fugiat ducimus nam, placeat libero consectetur at
+                           veritatis blanditiis.</p>
+                        <p><a href="shop.html" className="btn">Get The Offer</a></p>
+                     </div>
+                     <div className="col">
+                        <div id="saleCarousel" className="carousel slide carousel-dark w-100" data-bs-ride="carousel">
+                           <div className="carousel-indicators top-100">
+                              <button type="button" data-bs-target="#saleCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#saleCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#saleCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                           </div>
+                           <div className="carousel-inner">
+                              <div className="carousel-item active">
+                                 <div className='row'>
+                                    <div className='col-6'>
+                                       <img src={product1PNG} className="d-block w-100" />
+                                    </div>
+                                    <div className='col-6 d-flex align-items-center'>
+                                       <div>
+                                          <h4 className='product-title text-black'>Nordic Chair</h4>
+                                          <span className='text-decoration-line-through' >$50.00</span>
+                                          <h4 className='text-black'>$25.00 <span className='text-danger'>-50%</span> </h4>
+                                          <p><a href="#" className="btn btn-secondary mt-3">Add To Cart</a></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div className="carousel-item">
+                                 <div className='row'>
+                                    <div className='col-6'>
+                                       <img src={product2PNG} className="d-block w-100" />
+                                    </div>
+                                    <div className='col-6 d-flex align-items-center'>
+                                       <div>
+                                          <h4 className='product-title text-black'>Kruzo Aero Chair</h4>
+                                          <span className='text-decoration-line-through' >$78.00</span>
+                                          <h4 className='text-black'>$39.00 <span className='text-danger'>-50%</span> </h4>
+                                          <p><a href="#" className="btn btn-secondary mt-3">Add To Cart</a></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div className="carousel-item">
+                                 <div className='row'>
+                                    <div className='col-6'>
+                                       <img src={product3PNG} className="d-block w-100" />
+                                    </div>
+                                    <div className='col-6 d-flex align-items-center'>
+                                       <div>
+                                          <h4 className='product-title text-black'>Ergonomic Chair</h4>
+                                          <span className='text-decoration-line-through' >$43.00</span>
+                                          <h4 className='text-black'>$22.50 <span className='text-danger'>-50%</span> </h4>
+                                          <p><a href="#" className="btn btn-secondary mt-3">Add To Cart</a></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            {/* End Sale Section */}
             {/* Start Product Section */}
             <div className="product-section">
                <div className="container">
