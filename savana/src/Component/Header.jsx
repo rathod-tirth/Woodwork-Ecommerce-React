@@ -5,13 +5,13 @@ const Header = () => {
    return (
       <>
          {/* Start Header/Navigation */}
-         <nav className="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+         <nav className="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Woodwork navigation bar">
             <div className="container">
-               <a className="navbar-brand" href="/">Savana<span>.in</span></a>
-               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+               <a className="navbar-brand" href="/">Woodwork<span>.</span></a>
+               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsWoodwork" aria-controls="navbarsWoodwork" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon" />
                </button>
-               <div className="collapse navbar-collapse" id="navbarsFurni">
+               <div className="collapse navbar-collapse" id="navbarsWoodwork">
                   <ul className="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
                      <li className="nav-item active">
                         <a className="nav-link" href="/">Home</a>

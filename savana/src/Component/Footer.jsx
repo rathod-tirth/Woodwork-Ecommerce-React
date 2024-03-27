@@ -2,6 +2,7 @@ import sofaPNG from '../assets/images/sofa.png'
 import envelopeOutlineSVG from '../assets/images/envelope-outline.svg'
 
 const Footer = () => {
+   let currentYear = new Date().getFullYear()
    return (
       <>
          {/* Start Footer Section */}
@@ -32,7 +33,7 @@ const Footer = () => {
                </div>
                <div className="row">
                   <div className="col-lg-4">
-                     <div className="mb-4 footer-logo-wrap"><a href="#" className="footer-logo">Savana</a></div>
+                     <div className="mb-4 footer-logo-wrap"><a href="#" className="footer-logo">Woodwork.</a></div>
                      <p className="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
                         malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
                         Pellentesque habitant</p>
@@ -81,9 +82,12 @@ const Footer = () => {
                <div className="border-top copyright">
                   <div className="row pt-4">
                      <div className="col-lg-6">
-                        <p className="mb-2 text-center text-lg-start">Copyright ©
-                           . All Rights Reserved — Designed
-                           with love by <a href="#">Tirth Rathod</a>
+                        <p class="mb-2 text-center text-lg-start">Copyright &copy; {currentYear}. All Rights Reserved.
+                           Designed with love by <a href="https://untree.co">Untree.co</a>.
+                           <br />
+                           Distributed By <a href="https://themewagon.com">ThemeWagon</a>. Edited and
+                           Developed By <a href="#">Tirth Rathod</a>
+                           {/* <!-- License information: https://untree.co/license/ --> */}
                         </p>
                      </div>
                      <div className="col-lg-6 text-center text-lg-end">
