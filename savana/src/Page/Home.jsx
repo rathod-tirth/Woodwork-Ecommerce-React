@@ -46,7 +46,7 @@ function Home() {
             <div className="sale-section">
                <div className="container">
                   <div className="row justify-content-between">
-                     <div className="col-lg-5">
+                     <div className="col-lg-5 pb-5">
                         <h2 className="section-title">Mega Sale</h2>
                         <h3 className='text-warning fw-bolder fs-2'>24h : 15m : 08s</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -72,7 +72,7 @@ function Home() {
                                        <div>
                                           <h4 className='product-title text-black'>Nordic Chair</h4>
                                           <span className='text-decoration-line-through' >$50.00</span>
-                                          <h4 className='text-black'>$25.00 <span className='text-danger'>-50%</span> </h4>
+                                          <h4 className='text-black'>$25.00 <span className='text-danger'>-50%</span></h4>
                                           <p><a href="#" className="btn btn-secondary mt-3">Add To Cart</a></p>
                                        </div>
                                     </div>
@@ -167,6 +167,58 @@ function Home() {
                </div>
             </div>
             {/* End Product Section */}
+            {/* Start Popular Section */}
+            <div className="popular-section product-section">
+               <div className="container">
+                  <div className="row">
+                     {/* Start Column 2 */}
+                     <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                        <a className="product-item" href="cart.html">
+                           <img src={product1PNG} className="img-fluid product-thumbnail" />
+                           <h3 className="product-title">Nordic Chair</h3>
+                           <strong className="product-price">$50.00</strong>
+                           <span className="icon-cross">
+                              <img src={crossSVG} className="img-fluid" />
+                           </span>
+                        </a>
+                     </div>
+                     {/* End Column 2 */}
+                     {/* Start Column 3 */}
+                     <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                        <a className="product-item" href="cart.html">
+                           <img src={product2PNG} className="img-fluid product-thumbnail" />
+                           <h3 className="product-title">Kruzo Aero Chair</h3>
+                           <strong className="product-price">$78.00</strong>
+                           <span className="icon-cross">
+                              <img src={crossSVG} className="img-fluid" />
+                           </span>
+                        </a>
+                     </div>
+                     {/* End Column 3 */}
+                     {/* Start Column 4 */}
+                     <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                        <a className="product-item" href="cart.html">
+                           <img src={product3PNG} className="img-fluid product-thumbnail" />
+                           <h3 className="product-title">Ergonomic Chair</h3>
+                           <strong className="product-price">$43.00</strong>
+                           <span className="icon-cross">
+                              <img src={crossSVG} className="img-fluid" />
+                           </span>
+                        </a>
+                     </div>
+                     {/* End Column 4 */}
+                     {/* Start Column 1 */}
+                     <div className="col-md-12 col-lg-3 mb-5 mb-lg-0">
+                        <h2 className="mb-4 section-title">Popular Items</h2>
+                        <p className="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate
+                           velit imperdiet dolor tempor tristique. </p>
+                        <p><a href="shop.html" className="btn">Explore</a></p>
+                     </div>
+                     {/* End Column 1 */}
+                  </div>
+               </div>
+            </div>
+            {/* End Popular Section */}
             {/* Start Why Choose Us Section */}
             <div className="why-choose-section">
                <div className="container">
@@ -251,50 +303,6 @@ function Home() {
                </div>
             </div>
             {/* End We Help Section */}
-            {/* Start Popular Product */}
-            <div className="popular-product">
-               <div className="container">
-                  <div className="row">
-                     <div className="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                        <div className="product-item-sm d-flex">
-                           <div className="thumbnail">
-                              <img src={product1PNG} alt="Image" className="img-fluid" />
-                           </div>
-                           <div className="pt-3">
-                              <h3>Nordic Chair</h3>
-                              <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
-                              <p><a href="#">Read More</a></p>
-                           </div>
-                        </div>
-                     </div>
-                     <div className="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                        <div className="product-item-sm d-flex">
-                           <div className="thumbnail">
-                              <img src={product2PNG} alt="Image" className="img-fluid" />
-                           </div>
-                           <div className="pt-3">
-                              <h3>Kruzo Aero Chair</h3>
-                              <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
-                              <p><a href="#">Read More</a></p>
-                           </div>
-                        </div>
-                     </div>
-                     <div className="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                        <div className="product-item-sm d-flex">
-                           <div className="thumbnail">
-                              <img src={product3PNG} alt="Image" className="img-fluid" />
-                           </div>
-                           <div className="pt-3">
-                              <h3>Ergonomic Chair</h3>
-                              <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
-                              <p><a href="#">Read More</a></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            {/* End Popular Product */}
             {/* Start Testimonial Slider */}
             <div className="testimonial-section">
                <div className="container">
@@ -303,15 +311,16 @@ function Home() {
                         <h2 className="section-title">Testimonials</h2>
                      </div>
                   </div>
-                  <div className="row justify-content-center">
+                  <div className="row justify-content-center mt-3">
                      <div className="col-lg-12">
-                        <div className="testimonial-slider-wrap text-center">
-                           <div id="testimonial-nav">
-                              <span className="prev" data-controls="prev"><span className="fa fa-chevron-left" /></span>
-                              <span className="next" data-controls="next"><span className="fa fa-chevron-right" /></span>
+                        <div id="testimonialCarousel" className="carousel slide carousel-dark" data-bs-ride="carousel">
+                           <div class="carousel-indicators top-100">
+                              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                            </div>
-                           <div className="testimonial-slider">
-                              <div className="item">
+                           <div className="carousel-inner">
+                              <div className="carousel-item active">
                                  <div className="row justify-content-center">
                                     <div className="col-lg-8 mx-auto">
                                        <div className="testimonial-block text-center">
@@ -332,9 +341,9 @@ function Home() {
                                        </div>
                                     </div>
                                  </div>
+                                 {/* END item */}
                               </div>
-                              {/* END item */}
-                              <div className="item">
+                              <div className="carousel-item">
                                  <div className="row justify-content-center">
                                     <div className="col-lg-8 mx-auto">
                                        <div className="testimonial-block text-center">
@@ -355,9 +364,9 @@ function Home() {
                                        </div>
                                     </div>
                                  </div>
+                                 {/* END item */}
                               </div>
-                              {/* END item */}
-                              <div className="item">
+                              <div className="carousel-item">
                                  <div className="row justify-content-center">
                                     <div className="col-lg-8 mx-auto">
                                        <div className="testimonial-block text-center">
@@ -378,9 +387,17 @@ function Home() {
                                        </div>
                                     </div>
                                  </div>
+                                 {/* END item */}
                               </div>
-                              {/* END item */}
                            </div>
+                           <button className="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span className="visually-hidden">Previous</span>
+                           </button>
+                           <button className="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span className="visually-hidden">Next</span>
+                           </button>
                         </div>
                      </div>
                   </div>
