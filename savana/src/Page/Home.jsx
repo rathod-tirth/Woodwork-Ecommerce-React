@@ -314,8 +314,8 @@ function Home() {
                   <div className="row justify-content-center mt-3">
                      <div className="col-lg-12">
                         <div id="testimonialCarousel" className="carousel slide carousel-dark" data-bs-ride="carousel">
-                           <div class="carousel-indicators top-100">
-                              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                           <div className="carousel-indicators top-100">
+                              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                               <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                               <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                            </div>
