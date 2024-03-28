@@ -1,14 +1,18 @@
-import Header from "./Component/Header"
-import Footer from "./Component/Footer"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./Page/Home"
+import SharedLayout from "./Page/SharedLayout"
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Home />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
