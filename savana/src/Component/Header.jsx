@@ -15,8 +15,8 @@ const Header = () => {
                </button>
                <div className="collapse navbar-collapse" id="navbarsWoodwork">
                   <ul className="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-                     <li><NavLink className="nav-link active" to="/">Home</NavLink></li>
-                     <li><a className="nav-link" href="shop.html">Shop</a></li>
+                     <li><NavLink className="nav-link" to="/">Home</NavLink></li>
+                     <li><NavLink className="nav-link" to="/shop">Shop</NavLink></li>
                      <li><a className="nav-link" href="about.html">About us</a></li>
                      <li><a className="nav-link" href="services.html">Services</a></li>
                      <li><a className="nav-link" href="blog.html">Blog</a></li>
