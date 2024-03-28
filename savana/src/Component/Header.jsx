@@ -1,5 +1,6 @@
 import userSVG from '../assets/images/user.svg'
 import cartSVG from '../assets/images/cart.svg'
+import ScrollToTop from './ScrollToTop'
 
 const Header = () => {
    return (
@@ -28,6 +29,7 @@ const Header = () => {
                   </ul>
                </div>
             </div>
+            <ScrollToTop />
          </nav>
          {/* End Header/Navigation */}
       </>
