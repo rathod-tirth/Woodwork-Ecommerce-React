@@ -168,6 +168,66 @@ a.more {
   margin-right: 20px;
 }
 
+/* Dropdown container */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.custom-dropdown .custom-dropdown-btn {
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.custom-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  left: 0.8rem;
+}
+
+/* Links inside the dropdown */
+.custom-dropdown-content a {
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+/* Change color of dropdown links on hover */
+.custom-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.custom-dropdown:hover .custom-dropdown-btn {
+  opacity: 1;
+}
+
+/* Show the dropdown menu on hover */
+.custom-dropdown:hover .custom-dropdown-content {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation for fading in the dropdown menu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .scroll-to-top {
   position: absolute;
   top: 80vh;
