@@ -7,7 +7,7 @@ const Header = () => {
    return (
       <>
          {/* Start Header/Navigation */}
-         <nav className="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Woodwork navigation bar">
+         <nav className="custom-navbar navbar navbar-expand-lg navbar-dark bg-dark" arial-label="Woodwork navigation bar">
             <div className="container">
                <Link className="navbar-brand" to="/">Woodwork<span>.</span></Link>
                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsWoodwork" aria-controls="navbarsWoodwork" aria-expanded="false" aria-label="Toggle navigation">
