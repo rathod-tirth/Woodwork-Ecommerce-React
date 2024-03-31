@@ -15,6 +15,7 @@ import person1PNG from '../assets/images/person-1.png'
 import post1JPG from '../assets/images/post-1.jpg'
 import post2JPG from '../assets/images/post-2.jpg'
 import post3JPG from '../assets/images/post-3.jpg'
+import ProductCard from '../Component/ProductCard'
 
 function Home() {
 
@@ -129,38 +130,17 @@ function Home() {
                      {/* End Column 1 */}
                      {/* Start Column 2 */}
                      <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                        <a className="product-item" href="cart.html">
-                           <img src={product1PNG} className="img-fluid product-thumbnail" />
-                           <h3 className="product-title">Nordic Chair</h3>
-                           <strong className="product-price">$50.00</strong>
-                           <span className="icon-cross">
-                              <img src={crossSVG} className="img-fluid" />
-                           </span>
-                        </a>
+                        <ProductCard data={{ image: product1PNG, name: 'Nordic Chair', rating: 4, price: '50.00', discount: '50' }} />
                      </div>
                      {/* End Column 2 */}
                      {/* Start Column 3 */}
                      <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                        <a className="product-item" href="cart.html">
-                           <img src={product2PNG} className="img-fluid product-thumbnail" />
-                           <h3 className="product-title">Kruzo Aero Chair</h3>
-                           <strong className="product-price">$78.00</strong>
-                           <span className="icon-cross">
-                              <img src={crossSVG} className="img-fluid" />
-                           </span>
-                        </a>
+                        <ProductCard data={{ image: product2PNG, name: 'Kruzo Aero Chair', rating: 5, price: '78.00', discount: '50' }} />
                      </div>
                      {/* End Column 3 */}
                      {/* Start Column 4 */}
                      <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                        <a className="product-item" href="cart.html">
-                           <img src={product3PNG} className="img-fluid product-thumbnail" />
-                           <h3 className="product-title">Ergonomic Chair</h3>
-                           <strong className="product-price">$43.00</strong>
-                           <span className="icon-cross">
-                              <img src={crossSVG} className="img-fluid" />
-                           </span>
-                        </a>
+                        <ProductCard data={{ image: product3PNG, name: 'Ergonomic Chair', rating: 5, price: '43.00', discount: '50' }} />
                      </div>
                      {/* End Column 4 */}
                   </div>
