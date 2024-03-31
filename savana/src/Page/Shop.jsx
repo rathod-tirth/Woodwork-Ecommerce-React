@@ -1,9 +1,12 @@
+import { useState } from 'react'
 import crossSVG from '../assets/images/cross.svg'
 import product1PNG from '../assets/images/product-1.png'
 import product2PNG from '../assets/images/product-2.png'
 import product3PNG from '../assets/images/product-3.png'
 
 function Shop() {
+   const [isFav, setIsFav] = useState(false)
+
    return (
       <div className="main-section">
          <div>
@@ -27,14 +30,20 @@ function Shop() {
                   <div className="row">
                      {/* Start Column 1 */}
                      <div className="col-12 col-md-4 col-lg-3 mb-5">
-                        <a className="product-item" href="#">
+                        <div className="product-item">
                            <img src={product3PNG} className="img-fluid product-thumbnail" />
                            <h3 className="product-title">Nordic Chair</h3>
                            <strong className="product-price">$50.00</strong>
-                           <span className="icon-cross">
-                              <img src={crossSVG} className="img-fluid" />
+                           {/* <span className="icon-cross">
+                              <img src={crossSVG} className="img-fluid" title='Add to Cart' />
+                           </span> */}
+                           <span className='product-icon'>
+                              <i class="fa-solid fa-plus fa-lg"></i>
+
+                              {isFav ? (<i class="fa-solid fa-heart fa-lg" style={{ color: '#ff5c5c', background: 'white' }} onClick={() => setIsFav(false)}></i>
+                              ) : (<i class="fa-solid fa-heart fa-lg" onClick={() => setIsFav(true)}></i>)}
                            </span>
-                        </a>
+                        </div>
                      </div>
                      {/* End Column 1 */}
                      {/* Start Column 2 */}
