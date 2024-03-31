@@ -1,4 +1,3 @@
-import crossSVG from '../assets/images/cross.svg'
 import product1PNG from '../assets/images/product-1.png'
 import product2PNG from '../assets/images/product-2.png'
 import product3PNG from '../assets/images/product-3.png'

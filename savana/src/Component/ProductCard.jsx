@@ -5,7 +5,7 @@ function ProductCard({ data }) {
 
    return (
       <>
-         <div className="product-item">
+         <div className="product-item h-100">
             <a href='#' className='text-decoration-none'>
                <img src={data.image} className="img-fluid product-thumbnail" />
                <div className='product-content d-flex justify-content-center'>
@@ -25,8 +25,8 @@ function ProductCard({ data }) {
                </div>
             </a>
             <span className='product-icon'>
-               <i className="fa-solid fa-plus fa-lg"></i>
-               <i className={`fa-heart fa-lg ${isFav ? 'fa-solid' : 'fa-regular'}`}
+               <i className="fa-solid fa-plus fa-lg" title="Add to Cart"></i>
+               <i title="Favourite" className={`fa-heart fa-lg ${isFav ? 'fa-solid' : 'fa-regular'}`}
                   style={{ color: isFav ? '#ff5c5c' : '' }} onClick={() => { setIsFav(!isFav) }}></i>
             </span>
          </div>
