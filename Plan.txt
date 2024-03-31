@@ -1,9 +1,0 @@
-1. Search
-2. Cart (as a sidebar) (need to have a quick and sleek access)
-3. Quick Buy
-4. Login
-5. Sign up
-6. Quick View
-7. Profile
-8. Update Password
-9. Review
