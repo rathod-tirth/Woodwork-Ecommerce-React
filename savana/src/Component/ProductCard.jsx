@@ -25,11 +25,6 @@ function ProductCard({ data }) {
                   </div>
                </div>
             </a>
-            {/* <span className='product-icon'>
-               <i className="fa-solid fa-plus fa-lg" title="Add to Cart"></i>
-               <i title="Favourite" className={`fa-heart fa-lg ${isFav ? 'fa-solid' : 'fa-regular'}`}
-                  style={{ color: isFav ? '#ff5c5c' : '' }} onClick={() => { setIsFav(!isFav) }}></i>
-            </span> */}
             <div className="product-btn d-flex flex-column align-items-center">
                <button className="btn">Add to Cart</button>
                <button className="btn btn-secondary">Buy Now</button>
