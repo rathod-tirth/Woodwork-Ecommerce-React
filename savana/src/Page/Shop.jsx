@@ -8,23 +8,31 @@ function Shop() {
    return (
       <div className="main-section">
          <div>
-            {/* Start Hero Section */}
-            <div className="hero">
+            <div className="product-section">
                <div className="container">
-                  <div className="row justify-content-between">
-                     <div className="col-lg-5">
-                        <div className="intro-excerpt">
-                           <h1>Shop</h1>
+                  {/* Start searchbar, filter, sort */}
+                  <div className="row justify-content-between mb-2">
+                     <div className="col-6">
+                        <div className="input-group mb-3 searchbar">
+                           <input type="text" className="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2" />
+                           <button className="input-group-text search-icon" type="button" id="button-addon2"><i className="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                      </div>
-                     <div className="col-lg-7">
+                     <div className="col-3">
+                        <input type="button" className="form-control" placeholder="Filter" value='Filter' />
+                     </div>
+                     <div className="col-3">
+                        <div className="input-group mb-3">
+                           <label className="input-group-text" htmlFor="inputGroupSelect01">Sort</label>
+                           <select className="form-select" id="inputGroupSelect01">
+                              <option value={1}>Relevant</option>
+                              <option value={2}>High to Low</option>
+                              <option value={3}>Low to High</option>
+                           </select>
+                        </div>
                      </div>
                   </div>
-               </div>
-            </div>
-            {/* End Hero Section */}
-            <div className="untree_co-section product-section before-footer-section">
-               <div className="container">
+                  {/* End searchbar, filter, sort */}
                   <div className="row">
                      {/* Start Column 1 */}
                      <div className="col-12 col-md-4 col-lg-3 mb-5">

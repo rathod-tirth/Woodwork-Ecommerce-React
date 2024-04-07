@@ -344,6 +344,16 @@ a.more {
   }
 }
 
+.search-icon {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.search-icon:hover {
+  filter: brightness(80%);
+}
+
 .btn {
   font-weight: 600;
   padding: 12px 30px;
@@ -404,7 +414,7 @@ a.more {
 }
 
 .product-section {
-  padding: 3rem 0;
+  padding: 2rem 0 10rem 0;
 }
 
 .product-section .product-item {
