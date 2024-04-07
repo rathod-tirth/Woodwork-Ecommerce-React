@@ -13,13 +13,13 @@ function Shop() {
                   {/* Start searchbar, filter, sort */}
                   <div className="row justify-content-between mb-2">
                      <div className="col-6">
-                        <div className="input-group mb-3 searchbar">
+                        <div className="input-group mb-3">
                            <input type="text" className="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2" />
-                           <button className="input-group-text search-icon" type="button" id="button-addon2"><i className="fa-solid fa-magnifying-glass"></i></button>
+                           <button className="input-group-text text-white custom-btn" type="button" id="button-addon2"><i className="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                      </div>
                      <div className="col-3">
-                        <input type="button" className="form-control" placeholder="Filter" value='Filter' />
+                        <button type="button" className="form-control" >Filter</button>
                      </div>
                      <div className="col-3">
                         <div className="input-group mb-3">

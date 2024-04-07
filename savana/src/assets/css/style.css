@@ -344,16 +344,6 @@ a.more {
   }
 }
 
-.search-icon {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
-}
-
-.search-icon:hover {
-  filter: brightness(80%);
-}
-
 .btn {
   font-weight: 600;
   padding: 12px 30px;
@@ -876,6 +866,19 @@ a.more {
 
 .form-control:-moz-placeholder {
   font-size: 14px;
+}
+
+.custom-btn {
+  background-color: #3b5d50;
+  color: white;
+  border-color: #3b5d50;
+  -webkit-transition: .2s all ease;
+  -o-transition: .2s all ease;
+  transition: .2s all ease;
+}
+
+.custom-btn:hover {
+  background-color: #55796b;
 }
 
 .service {
