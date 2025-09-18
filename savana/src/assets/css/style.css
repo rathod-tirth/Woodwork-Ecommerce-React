@@ -199,7 +199,7 @@ a.more {
   padding: 5px 16px;
   text-decoration: none;
   display: block;
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 /* Change color of dropdown links on hover */
@@ -241,6 +241,12 @@ a.more {
 
 .main-section {
   padding-top: 76px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+  z-index: 5;
 }
 
 .hero {
