@@ -27,9 +27,9 @@ const Header = () => {
                         </div>
                      </li>
                      <li><a className="nav-link" href="about.html">About us</a></li>
-                     <li><a className="nav-link" href="services.html">Services</a></li>
-                     <li><a className="nav-link" href="blog.html">Blog</a></li>
-                     <li><a className="nav-link" href="contact.html">Contact us</a></li>
+                     {/* <li><a className="nav-link" href="services.html">Services</a></li> */}
+                     {/* <li><a className="nav-link" href="blog.html">Blog</a></li> */}
+                     {/* <li><a className="nav-link" href="contact.html">Contact us</a></li> */}
                   </ul>
                   <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
                      <li><a className="nav-link" href="#"><img src={userSVG} alt='profile' title='Profile' /></a></li>
